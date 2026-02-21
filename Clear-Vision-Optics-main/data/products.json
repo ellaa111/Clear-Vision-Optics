@@ -1,0 +1,524 @@
+[
+  {
+    "id": 1,
+    "name": "Lacoste eyewear",
+    "description": "Orange & black",
+    "price": 7000.0,
+    "image": "product_1_c1e62769.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 2,
+    "name": "Lacoste eyewear",
+    "description": "Black & orange",
+    "price": 7000.0,
+    "image": "product_2_dc146f83.jpeg",
+    "category": "glasses",
+    "features": [
+      "Lightweight design"
+    ],
+    "is_featured": false
+  },
+  {
+    "id": 3,
+    "name": "BOSS hugo boss",
+    "description": "Brown, square",
+    "price": 7000.0,
+    "image": "product_3_ab290a51.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 4,
+    "name": "BOSS hugo boss",
+    "description": "Cheetah print",
+    "price": 7000.0,
+    "image": "product_4_dd7381f8.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 5,
+    "name": "Ray-Ban",
+    "description": "warm amber/honey tortoiseshell",
+    "price": 7000.0,
+    "image": "product_5_b00d15cc.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 6,
+    "name": "Lacoste eyewear",
+    "description": "Green, square",
+    "price": 7000.0,
+    "image": "product_6_b8e33d43.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 7,
+    "name": "BOSS hugo boss",
+    "description": "Green,cheetah print",
+    "price": 7000.0,
+    "image": "product_7_fb85907e.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 8,
+    "name": "Ray-Ban",
+    "description": "Turquoise Blue\r\nSquare-Rectangular",
+    "price": 7000.0,
+    "image": "product_8_a9155b20.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 9,
+    "name": "Ray-Ban",
+    "description": "Blue, Rectangular",
+    "price": 7000.0,
+    "image": "product_9_1fe4e1d8.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 10,
+    "name": "Ray-Ban",
+    "description": "Clear/transparent crystal acetate f\r\nTortoise shell temples",
+    "price": 7000.0,
+    "image": "product_10_f349fe42.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 11,
+    "name": "AS008",
+    "description": "Cat-eye\r\nRose gold",
+    "price": 3500.0,
+    "image": "product_11_a62bc191.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 12,
+    "name": "Celine CL50019I",
+    "description": "Amber Brown \r\nButterfly-cat eye",
+    "price": 4500.0,
+    "image": "product_12_a49ad004.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 13,
+    "name": "AS016",
+    "description": "Red\r\nround-sqaure",
+    "price": 3500.0,
+    "image": "product_13_0c11e485.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 14,
+    "name": "AS008",
+    "description": "Brown\r\nRound-square",
+    "price": 3500.0,
+    "image": "product_14_b13616db.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 15,
+    "name": "AS001",
+    "description": "Matte black\r\nCat-eye",
+    "price": 3500.0,
+    "image": "product_15_7935bd01.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 16,
+    "name": "Ray-Ban",
+    "description": "Square\r\nClear, silver",
+    "price": 7000.0,
+    "image": "product_16_dba1fae4.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 17,
+    "name": "Classic Square",
+    "description": "Square\r\nMidnight Blue",
+    "price": 4500.0,
+    "image": "product_17_86b14128.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 18,
+    "name": "CL50019I",
+    "description": "Transparent crystal-red",
+    "price": 4500.0,
+    "image": "product_18_03363da1.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 19,
+    "name": "JOY",
+    "description": "Half-Rim Browline\r\nDark charcoal",
+    "price": 3500.0,
+    "image": "product_19_a54ff863.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 20,
+    "name": "Ray- Ban",
+    "description": "Rectangle-Square\r\nBrown",
+    "price": 7000.0,
+    "image": "product_20_49aef98f.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 21,
+    "name": "Titanium IP",
+    "description": "Matte Blue\r\nSquare-Rectangle",
+    "price": 7000.0,
+    "image": "product_21_68709adc.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 22,
+    "name": "Hexagon Acetate",
+    "description": "Hexagon\r\nTransparent Crystal Grey",
+    "price": 4000.0,
+    "image": "product_22_4e6a5f14.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 23,
+    "name": "Maybach",
+    "description": "Transparent Green\r\nCateye",
+    "price": 4000.0,
+    "image": "product_23_856b3cd5.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 24,
+    "name": "AS013",
+    "description": "Round-square\r\nGold-Blue",
+    "price": 3500.0,
+    "image": "product_24_1a1df58f.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 25,
+    "name": "AS022",
+    "description": "Cateye\r\nPink, gold",
+    "price": 3500.0,
+    "image": "product_25_9817aea2.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 26,
+    "name": "M--118",
+    "description": "Red and black\r\nSquare",
+    "price": 3500.0,
+    "image": "product_26_6c90dd7c.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 27,
+    "name": "AS023",
+    "description": "Cateye - Brownline Hybrid",
+    "price": 3500.0,
+    "image": "product_27_bf90a36d.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 28,
+    "name": "Titanium IP",
+    "description": "Clear\r\nSqaure, chunky",
+    "price": 4000.0,
+    "image": "product_28_2ca331f8.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 29,
+    "name": "Titanium IP",
+    "description": "Hexagonal\r\nBlack and Gold",
+    "price": 7000.0,
+    "image": "product_29_155a7411.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 30,
+    "name": "Titanium IP",
+    "description": "Round\r\nClear",
+    "price": 7000.0,
+    "image": "product_30_3a5f1afa.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 31,
+    "name": "Cateye",
+    "description": "Classic Silver Orange\r\nCateye",
+    "price": 4000.0,
+    "image": "product_31_dacebd72.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 32,
+    "name": "Titanium IP",
+    "description": "Sky blue\r\nRound",
+    "price": 7000.0,
+    "image": "product_32_2bf0b946.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 33,
+    "name": "7 Charmant PA3008",
+    "description": "Dark silver black\r\nRectangle",
+    "price": 3500.0,
+    "image": "product_33_1e2d0383.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 34,
+    "name": "Titanium IP",
+    "description": "Square\r\nBlack",
+    "price": 7000.0,
+    "image": "product_34_8faa7c95.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 35,
+    "name": "Ray-Ban",
+    "description": "Square- Rectangle\r\nBrown",
+    "price": 7000.0,
+    "image": "product_35_68e991de.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 36,
+    "name": "Hexagon",
+    "description": "Chunky Hexagon\r\nBurgundy",
+    "price": 4500.0,
+    "image": "product_36_3c9205c9.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 37,
+    "name": "Hexagon",
+    "description": "Black\r\nChunky Hexagon",
+    "price": 4500.0,
+    "image": "product_37_54dcdfc5.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 38,
+    "name": "LA express",
+    "description": "Light clear\r\nSquare-rectangle",
+    "price": 3500.0,
+    "image": "product_38_67eb9db4.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 39,
+    "name": "Hexagon",
+    "description": "Chunky Hexagon\r\nOrange, Clear",
+    "price": 4500.0,
+    "image": "product_39_3f1480f1.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 40,
+    "name": "Ray-Ban",
+    "description": "Square\r\nSilver",
+    "price": 7000.0,
+    "image": "product_40_6c040070.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 41,
+    "name": "AS008",
+    "description": "Pink , Purple\r\nCateye",
+    "price": 3500.0,
+    "image": "product_41_d3a1ce2d.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 42,
+    "name": "Ray-Ban",
+    "description": "Square-round\r\nOrange Black",
+    "price": 3500.0,
+    "image": "product_42_aeae4954.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 43,
+    "name": "Ray-Ban",
+    "description": "Chunky\r\nLight-Blue",
+    "price": 7000.0,
+    "image": "product_43_e27f9162.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 44,
+    "name": "Cateye",
+    "description": "Cateye\r\nChunky\r\nSilver Black",
+    "price": 4500.0,
+    "image": "product_44_e31ae3ed.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 45,
+    "name": "Hexagon",
+    "description": "Hexagonal\r\nLight Pink",
+    "price": 4500.0,
+    "image": "product_45_4d1ec369.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 46,
+    "name": "Titanium IP",
+    "description": "Semi-Rimless Cat-Eye",
+    "price": 3500.0,
+    "image": "product_46_b3f84b91.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 47,
+    "name": "Ray-Ban",
+    "description": "Chunky\r\nClear",
+    "price": 4500.0,
+    "image": "product_47_f330c69a.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 48,
+    "name": "Ray-Ban",
+    "description": "Sqaure\r\nCheetah Print",
+    "price": 7000.0,
+    "image": "product_48_bb02c370.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 49,
+    "name": "Cateye",
+    "description": "Square\r\nCateye \r\nlight pink",
+    "price": 4500.0,
+    "image": "product_49_3879f7f1.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 50,
+    "name": "Cateye",
+    "description": "Chunky\r\nBlack \r\nCateye",
+    "price": 4000.0,
+    "image": "product_50_e13933eb.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 51,
+    "name": "Chunky Square",
+    "description": "Ombre, light brown\r\nSqaure",
+    "price": 4500.0,
+    "image": "product_51_58af5944.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  },
+  {
+    "id": 52,
+    "name": "Titanium IP",
+    "description": "Clear, pink\r\nHexagonal",
+    "price": 7000.0,
+    "image": "product_52_192d9dc4.jpeg",
+    "category": "glasses",
+    "features": [],
+    "is_featured": false
+  }
+]
