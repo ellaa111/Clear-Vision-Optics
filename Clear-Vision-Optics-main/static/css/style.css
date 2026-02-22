@@ -1,0 +1,15 @@
+/* Custom styles for your theme */
+:root {
+  --navy: #0a2540;
+  --turquoise: #00b4d8;
+}
+
+/* Add your custom animations here */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}

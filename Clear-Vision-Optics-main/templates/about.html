@@ -1,0 +1,623 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+  /* Smooth Scroll Animations */
+  .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+  }
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-left {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+  }
+  .reveal-left.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .reveal-right {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+  }
+  .reveal-right.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .reveal-scale {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+  }
+  .reveal-scale.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* Floating Animation */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+  }
+  .float-animation {
+    animation: float 5s ease-in-out infinite;
+  }
+</style>
+
+<!-- Hero Section -->
+<section class="relative bg-navy text-white overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-navy via-navy to-turquoise/30 z-0"></div>
+  <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+  
+  <div class="container mx-auto px-4 py-20 md:py-28 relative z-10">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="inline-block mb-6 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 reveal-scale">
+        <span class="text-sm font-medium">Est. 2018 • Kehancha Town, Migori</span>
+      </div>
+      <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight reveal">
+        Our Story of <span class="text-turquoise">Clear Vision</span>
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 opacity-95 max-w-3xl mx-auto leading-relaxed reveal" style="transition-delay: 0.2s;">
+        From a small optical shop to Migori County's most trusted eye care destination, 
+        we've been transforming lives through better vision for over 6 years.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Bar -->
+<section class="bg-turquoise py-8">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+      <div class="reveal">
+        <div class="text-4xl md:text-5xl font-bold mb-1">6+</div>
+        <div class="text-sm opacity-90">Years of Excellence</div>
+      </div>
+      <div class="reveal" style="transition-delay: 0.1s;">
+        <div class="text-4xl md:text-5xl font-bold mb-1">5000+</div>
+        <div class="text-sm opacity-90">Happy Customers</div>
+      </div>
+      <div class="reveal" style="transition-delay: 0.2s;">
+        <div class="text-4xl md:text-5xl font-bold mb-1">52+</div>
+        <div class="text-sm opacity-90">Frame Styles</div>
+      </div>
+      <div class="reveal" style="transition-delay: 0.3s;">
+        <div class="text-4xl md:text-5xl font-bold mb-1">4.9</div>
+        <div class="text-sm opacity-90">Star Rating</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Story Section -->
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+      <div class="relative reveal-left">
+        <div class="absolute -top-4 -left-4 w-24 h-24 bg-turquoise/20 rounded-full blur-2xl"></div>
+        <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-navy/10 rounded-full blur-2xl"></div>
+        <div class="relative bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl p-2 shadow-xl">
+          <div class="bg-white rounded-xl overflow-hidden">
+            <img src="https://kimi-web-img.moonshot.cn/img/www.verywellhealth.com/8fa64eb693da838385eb953b8985f46056cd97ee.jpg" 
+                 alt="Professional Eye Examination" 
+                 class="w-full h-80 object-cover">
+            <div class="p-4 bg-navy text-white text-center">
+              <p class="font-medium">State-of-the-art eye testing equipment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="reveal-right">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">Who We Are</h2>
+        <div class="space-y-4 text-gray-700 leading-relaxed">
+          <p>
+            <span class="font-bold text-navy">Clear Vision Optics</span> was founded in 2018 with a simple mission: 
+            to bring world-class eye care and premium eyewear to the people of Migori County. 
+            What started as a small shop in Kehancha Town has grown into the region's most trusted optical destination.
+          </p>
+          <p>
+            We believe that <span class="text-turquoise font-medium">everyone deserves clear vision</span>. 
+            Whether you're a student struggling to see the blackboard, a professional needing computer glasses, 
+            or a parent concerned about your child's eye health, we're here to help.
+          </p>
+          <p>
+            Our team of certified opticians combines professional expertise with personalized care. 
+            We don't just sell glasses—we provide comprehensive vision solutions tailored to your lifestyle, 
+            budget, and unique visual needs.
+          </p>
+        </div>
+        
+        <div class="mt-8 flex flex-wrap gap-4">
+          <div class="flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-full reveal" style="transition-delay: 0.2s;">
+            <span class="text-turquoise text-xl">✓</span>
+            <span class="text-sm font-medium text-navy">Certified Opticians</span>
+          </div>
+          <div class="flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-full reveal" style="transition-delay: 0.3s;">
+            <span class="text-turquoise text-xl">✓</span>
+            <span class="text-sm font-medium text-navy">Quality Guaranteed</span>
+          </div>
+          <div class="flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-full reveal" style="transition-delay: 0.4s;">
+            <span class="text-turquoise text-xl">✓</span>
+            <span class="text-sm font-medium text-navy">Affordable Prices</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Values -->
+<section class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Our Core Values</h2>
+      <p class="text-gray-600 text-lg">The principles that guide everything we do</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group reveal-left">
+        <div class="w-16 h-16 bg-turquoise/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-turquoise group-hover:text-white transition-colors text-3xl">
+          👁️
+        </div>
+        <h3 class="text-xl font-bold text-navy mb-3">Vision First</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Your eye health is our top priority. We conduct thorough examinations and provide honest 
+          recommendations based on your actual needs, never pushing unnecessary products.
+        </p>
+      </div>
+      
+      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group reveal" style="transition-delay: 0.2s;">
+        <div class="w-16 h-16 bg-turquoise/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-turquoise group-hover:text-white transition-colors text-3xl">
+          🤝
+        </div>
+        <h3 class="text-xl font-bold text-navy mb-3">Community Care</h3>
+        <p class="text-gray-600 leading-relaxed">
+          We're proud members of the Kehancha community. We treat every customer like family, 
+          offering flexible payment options and free adjustments for life.
+        </p>
+      </div>
+      
+      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group reveal-right" style="transition-delay: 0.4s;">
+        <div class="w-16 h-16 bg-turquoise/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-turquoise group-hover:text-white transition-colors text-3xl">
+          ✨
+        </div>
+        <h3 class="text-xl font-bold text-navy mb-3">Quality Always</h3>
+        <p class="text-gray-600 leading-relaxed">
+          We source our frames and lenses from trusted manufacturers. Every pair of glasses 
+          undergoes rigorous quality checks before reaching your hands.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image Catalog / Gallery Section -->
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Inside Clear Vision Optics</h2>
+      <p class="text-gray-600 text-lg">Take a virtual tour of our facility and services</p>
+    </div>
+    
+    <!-- Gallery Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto mb-8 reveal-scale">
+      <!-- Large Featured Image -->
+      <div class="col-span-2 row-span-2 relative group overflow-hidden rounded-2xl cursor-pointer" onclick="openGalleryModal(0)">
+        <img src="https://kimi-web-img.moonshot.cn/img/www.verywellhealth.com/8fa64eb693da838385eb953b8985f46056cd97ee.jpg" 
+             alt="Professional Eye Testing" 
+             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+          <div class="text-white">
+            <h4 class="font-bold text-lg">Professional Eye Testing</h4>
+            <p class="text-sm opacity-90">Comprehensive vision assessment</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Gallery Item 2 -->
+      <div class="relative group overflow-hidden rounded-2xl cursor-pointer h-48" onclick="openGalleryModal(1)">
+        <img src="https://kimi-web-img.moonshot.cn/img/www.warbyparker.com/bcf743c22e2da7390ac732b5b736fbd4de0f88ce.jpg" 
+             alt="Frame Styling" 
+             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-navy/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <span class="text-white font-medium">Frame Styles</span>
+        </div>
+      </div>
+      
+      <!-- Gallery Item 3 -->
+      <div class="relative group overflow-hidden rounded-2xl cursor-pointer h-48" onclick="openGalleryModal(2)">
+        <img src="https://kimi-web-img.moonshot.cn/img/sevenoe.com/6955b65e292411b582a2d5266e4b352861e077ec.jpg" 
+             alt="Modern Equipment" 
+             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-navy/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <span class="text-white font-medium">Our Equipment</span>
+        </div>
+      </div>
+      
+      <!-- Gallery Item 4 -->
+      <div class="relative group overflow-hidden rounded-2xl cursor-pointer h-48" onclick="openGalleryModal(3)">
+        <img src="https://kimi-web-img.moonshot.cn/img/www.bergfeinfield.com/564ecf745f148236040feae2992e32df67f37a42.jpg" 
+             alt="Eye Examination" 
+             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-navy/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <span class="text-white font-medium">Expert Care</span>
+        </div>
+      </div>
+      
+      <!-- Gallery Item 5 -->
+      <div class="relative group overflow-hidden rounded-2xl cursor-pointer h-48" onclick="openGalleryModal(4)">
+        <img src="https://kimi-web-img.moonshot.cn/img/media.allaboutvision.com/02699b8721e2102a48a8a1145aeaae4bb52490cf.jpg" 
+             alt="Lens Types" 
+             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-navy/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <span class="text-white font-medium">Lens Options</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Frame Collection Preview -->
+    <div class="max-w-6xl mx-auto mt-12 reveal">
+      <h3 class="text-2xl font-bold text-navy mb-6 text-center">Our Frame Collection</h3>
+      <div class="grid grid-cols-3 md:grid-cols-6 gap-4">
+        <div class="bg-gray-50 rounded-xl p-4 text-center hover:shadow-md transition-shadow reveal-scale" style="transition-delay: 0.05s;">
+          <div class="text-4xl mb-2">🕶️</div>
+          <div class="text-sm font-medium text-navy">Ray-Ban</div>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-4 text-center hover:shadow-md transition-shadow reveal-scale" style="transition-delay: 0.1s;">
+          <div class="text-4xl mb-2">👓</div>
+          <div class="text-sm font-medium text-navy">Lacoste</div>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-4 text-center hover:shadow-md transition-shadow reveal-scale" style="transition-delay: 0.15s;">
+          <div class="text-4xl mb-2">🕶️</div>
+          <div class="text-sm font-medium text-navy">BOSS</div>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-4 text-center hover:shadow-md transition-shadow reveal-scale" style="transition-delay: 0.2s;">
+          <div class="text-4xl mb-2">👓</div>
+          <div class="text-sm font-medium text-navy">Celine</div>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-4 text-center hover:shadow-md transition-shadow reveal-scale" style="transition-delay: 0.25s;">
+          <div class="text-4xl mb-2">🕶️</div>
+          <div class="text-sm font-medium text-navy">Titanium</div>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-4 text-center hover:shadow-md transition-shadow reveal-scale" style="transition-delay: 0.3s;">
+          <div class="text-4xl mb-2">👓</div>
+          <div class="text-sm font-medium text-navy">Maybach</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Modal -->
+<div id="galleryModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-sm" onclick="closeGalleryModal()">
+  <button class="absolute top-4 right-4 text-white hover:text-turquoise transition-colors z-50" onclick="closeGalleryModal()">
+    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+    </svg>
+  </button>
+  
+  <button class="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-turquoise transition-colors" onclick="changeImage(-1); event.stopPropagation();">
+    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+    </svg>
+  </button>
+  
+  <button class="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-turquoise transition-colors" onclick="changeImage(1); event.stopPropagation();">
+    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+    </svg>
+  </button>
+  
+  <div class="flex items-center justify-center h-full p-4" onclick="event.stopPropagation();">
+    <img id="galleryImage" src="" alt="" class="max-h-[85vh] max-w-full object-contain rounded-lg shadow-2xl">
+  </div>
+  
+  <div class="absolute bottom-4 left-0 right-0 text-center text-white">
+    <p id="galleryCaption" class="text-lg font-medium"></p>
+    <p class="text-sm opacity-70 mt-1">Click outside or press ESC to close</p>
+  </div>
+</div>
+
+<!-- Our Services Detailed -->
+<section class="py-20 bg-navy text-white">
+  <div class="container mx-auto px-4">
+    <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">What We Offer</h2>
+      <p class="opacity-90 text-lg">Comprehensive eye care services for the whole family</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+      <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/20 transition-all reveal-left">
+        <div class="w-14 h-14 bg-turquoise rounded-xl flex items-center justify-center text-2xl mb-4">👁️</div>
+        <h3 class="text-xl font-bold mb-2">Eye Examinations</h3>
+        <p class="opacity-80 text-sm leading-relaxed">Comprehensive vision tests using modern equipment. We check for myopia, hyperopia, astigmatism, and eye health conditions.</p>
+      </div>
+      
+      <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/20 transition-all reveal" style="transition-delay: 0.15s;">
+        <div class="w-14 h-14 bg-turquoise rounded-xl flex items-center justify-center text-2xl mb-4">👓</div>
+        <h3 class="text-xl font-bold mb-2">Prescription Glasses</h3>
+        <p class="opacity-80 text-sm leading-relaxed">Wide selection of frames from budget-friendly to designer brands. Single vision, bifocal, and progressive lenses available.</p>
+      </div>
+      
+      <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/20 transition-all reveal" style="transition-delay: 0.3s;">
+        <div class="w-14 h-14 bg-turquoise rounded-xl flex items-center justify-center text-2xl mb-4">🕶️</div>
+        <h3 class="text-xl font-bold mb-2">Sunglasses</h3>
+        <p class="opacity-80 text-sm leading-relaxed">Prescription and non-prescription sunglasses with UV protection. Protect your eyes in style under the Migori sun.</p>
+      </div>
+      
+      <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/20 transition-all reveal-right" style="transition-delay: 0.45s;">
+        <div class="w-14 h-14 bg-turquoise rounded-xl flex items-center justify-center text-2xl mb-4">🔧</div>
+        <h3 class="text-xl font-bold mb-2">Repairs & Adjustments</h3>
+        <p class="opacity-80 text-sm leading-relaxed">Free lifetime adjustments for glasses purchased from us. We also repair frames, replace nose pads, and fix hinges.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+      <div class="reveal-left">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">Why Kehancha Chooses Us</h2>
+        
+        <div class="space-y-6">
+          <div class="flex gap-4 reveal" style="transition-delay: 0.1s;">
+            <div class="w-12 h-12 bg-turquoise/10 rounded-xl flex items-center justify-center text-turquoise flex-shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-navy text-lg mb-1">Affordable Pricing</h4>
+              <p class="text-gray-600">Quality eyewear shouldn't break the bank. We offer competitive prices and flexible payment options for our community.</p>
+            </div>
+          </div>
+          
+          <div class="flex gap-4 reveal" style="transition-delay: 0.2s;">
+            <div class="w-12 h-12 bg-turquoise/10 rounded-xl flex items-center justify-center text-turquoise flex-shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-navy text-lg mb-1">1-Year Warranty</h4>
+              <p class="text-gray-600">All our frames and lenses come with a comprehensive one-year warranty against manufacturing defects.</p>
+            </div>
+          </div>
+          
+          <div class="flex gap-4 reveal" style="transition-delay: 0.3s;">
+            <div class="w-12 h-12 bg-turquoise/10 rounded-xl flex items-center justify-center text-turquoise flex-shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-navy text-lg mb-1">Family Friendly</h4>
+              <p class="text-gray-600">From pediatric eye care to senior vision solutions, we serve patients of all ages with patience and expertise.</p>
+            </div>
+          </div>
+          
+          <div class="flex gap-4 reveal" style="transition-delay: 0.4s;">
+            <div class="w-12 h-12 bg-turquoise/10 rounded-xl flex items-center justify-center text-turquoise flex-shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-navy text-lg mb-1">Same-Day Service</h4>
+              <p class="text-gray-600">Many prescriptions can be filled the same day. Get your glasses faster without compromising on quality.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="relative reveal-right">
+        <div class="absolute inset-0 bg-gradient-to-r from-turquoise/20 to-navy/20 rounded-3xl transform rotate-3"></div>
+        <div class="relative bg-white rounded-3xl shadow-2xl p-8 border border-gray-100">
+          <h3 class="text-2xl font-bold text-navy mb-6 text-center">Visit Our Store</h3>
+          
+          <div class="space-y-4">
+            <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-xl">
+              <div class="w-10 h-10 bg-turquoise rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-navy">Location</h4>
+                <p class="text-gray-600 text-sm">Kehancha Town, Migori County<br>Next to KCB Bank</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-xl">
+              <div class="w-10 h-10 bg-turquoise rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-navy">Opening Hours</h4>
+                <p class="text-gray-600 text-sm">Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 4:00 PM<br>Sunday: Closed</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-xl">
+              <div class="w-10 h-10 bg-turquoise rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-navy">Contact</h4>
+                <p class="text-gray-600 text-sm">+254 704 084 499<br>+254 725 884 252</p>
+              </div>
+            </div>
+          </div>
+          
+          <a href="/contact" class="mt-6 block w-full bg-navy hover:bg-turquoise text-white font-bold py-3 px-6 rounded-xl transition duration-300 text-center">
+            Get Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Meet the Team -->
+<section class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Meet Our Team</h2>
+      <p class="text-gray-600 text-lg">Dedicated professionals committed to your vision health</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all border border-gray-100 reveal-left">
+        <div class="w-24 h-24 bg-gradient-to-br from-turquoise to-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold">
+          CO
+        </div>
+        <h3 class="text-xl font-bold text-navy mb-1">Certified Optician</h3>
+        <p class="text-turquoise font-medium text-sm mb-3">Lead Optometrist</p>
+        <p class="text-gray-600 text-sm">Over 10 years of experience in eye care. Specializes in complex prescriptions and pediatric optometry.</p>
+      </div>
+      
+      <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all border border-gray-100 reveal" style="transition-delay: 0.2s;">
+        <div class="w-24 h-24 bg-gradient-to-br from-pink-400 to-rose-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold">
+          FS
+        </div>
+        <h3 class="text-xl font-bold text-navy mb-1">Frame Stylist</h3>
+        <p class="text-turquoise font-medium text-sm mb-3">Eyewear Consultant</p>
+        <p class="text-gray-600 text-sm">Expert in face shape analysis and frame selection. Helps you find the perfect style for your personality.</p>
+      </div>
+      
+      <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all border border-gray-100 reveal-right" style="transition-delay: 0.4s;">
+        <div class="w-24 h-24 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold">
+          LT
+        </div>
+        <h3 class="text-xl font-bold text-navy mb-1">Lab Technician</h3>
+        <p class="text-turquoise font-medium text-sm mb-3">Lens Specialist</p>
+        <p class="text-gray-600 text-sm">Ensures precision in every lens cut. Expert in progressive lenses and specialty coatings.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 bg-gradient-to-r from-navy to-[#0d3b66] text-white relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+  
+  <div class="container mx-auto px-4 text-center relative z-10 reveal">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Experience Better Vision?</h2>
+    <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
+      Visit Clear Vision Optics today and discover why we're Migori County's trusted choice for eye care.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="/contact" class="bg-turquoise hover:bg-[#0096c7] text-navy font-bold text-lg px-8 py-4 rounded-xl transition duration-300 shadow-lg">
+        Book an Eye Test
+      </a>
+      <a href="/products" class="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-bold text-lg px-8 py-4 rounded-xl transition duration-300 border border-white/30">
+        Browse Our Frames
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Scroll Animation Observer
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => {
+    observer.observe(el);
+  });
+
+  // Gallery Images Data
+  const galleryImages = [
+    {
+      src: "https://kimi-web-img.moonshot.cn/img/www.verywellhealth.com/8fa64eb693da838385eb953b8985f46056cd97ee.jpg",
+      caption: "Professional Eye Testing Equipment - Comprehensive vision assessment"
+    },
+    {
+      src: "https://kimi-web-img.moonshot.cn/img/www.warbyparker.com/bcf743c22e2da7390ac732b5b736fbd4de0f88ce.jpg",
+      caption: "Frame Style Guide - Find your perfect match"
+    },
+    {
+      src: "https://kimi-web-img.moonshot.cn/img/sevenoe.com/6955b65e292411b582a2d5266e4b352861e077ec.jpg",
+      caption: "Modern Optical Equipment - State-of-the-art technology"
+    },
+    {
+      src: "https://kimi-web-img.moonshot.cn/img/www.bergfeinfield.com/564ecf745f148236040feae2992e32df67f37a42.jpg",
+      caption: "Expert Eye Examination - Personalized care"
+    },
+    {
+      src: "https://kimi-web-img.moonshot.cn/img/media.allaboutvision.com/02699b8721e2102a48a8a1145aeaae4bb52490cf.jpg",
+      caption: "Lens Types - Single vision, Bifocal, Trifocal & Progressive options"
+    }
+  ];
+  
+  let currentImageIndex = 0;
+  
+  function openGalleryModal(index) {
+    currentImageIndex = index;
+    const modal = document.getElementById('galleryModal');
+    const img = document.getElementById('galleryImage');
+    const caption = document.getElementById('galleryCaption');
+    
+    img.src = galleryImages[index].src;
+    caption.textContent = galleryImages[index].caption;
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+  
+  function closeGalleryModal() {
+    const modal = document.getElementById('galleryModal');
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+  
+  function changeImage(direction) {
+    currentImageIndex += direction;
+    if (currentImageIndex < 0) currentImageIndex = galleryImages.length - 1;
+    if (currentImageIndex >= galleryImages.length) currentImageIndex = 0;
+    
+    const img = document.getElementById('galleryImage');
+    const caption = document.getElementById('galleryCaption');
+    
+    img.style.opacity = '0';
+    setTimeout(() => {
+      img.src = galleryImages[currentImageIndex].src;
+      caption.textContent = galleryImages[currentImageIndex].caption;
+      img.style.opacity = '1';
+    }, 200);
+  }
+  
+  // Keyboard navigation
+  document.addEventListener('keydown', function(e) {
+    if (document.getElementById('galleryModal').classList.contains('hidden')) return;
+    
+    if (e.key === 'Escape') closeGalleryModal();
+    if (e.key === 'ArrowLeft') changeImage(-1);
+    if (e.key === 'ArrowRight') changeImage(1);
+  });
+</script>
+
+{% endblock %}
