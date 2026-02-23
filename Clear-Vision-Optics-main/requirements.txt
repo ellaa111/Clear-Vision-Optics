@@ -1,7 +1,3 @@
 flask
 gunicorn
 requests
-pandas
-numpy
-flask-cors
-python-dotenv
